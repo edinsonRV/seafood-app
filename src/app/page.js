@@ -1,6 +1,19 @@
 import Image from "next/image";
 
+// app/page.jsx
 export default function Home() {
+  return (
+    <section>
+      <h1 className="text-3xl font-bold mb-4">Welcome to Seafood App</h1>
+      <p className="text-lg text-slate-700">
+        Discover the best seafood recipes from around the world.
+      </p>
+    </section>
+  );
+}
+
+
+/*export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -100,4 +113,4 @@ export default function Home() {
       </footer>
     </div>
   );
-}
+}*/

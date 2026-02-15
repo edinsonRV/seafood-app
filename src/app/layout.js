@@ -1,4 +1,34 @@
-import { Geist, Geist_Mono } from "next/font/google";
+// app/layout.jsx
+import "./globals.css";
+import Header from "../components/Header";
+import SideBar from "../components/SideBar";
+import Footer from "../components/Footer";
+
+export const metadata = {
+  title: "Seafood App",
+  description: "Delicious seafood recipes",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className="flex flex-col min-h-screen bg-slate-50 text-slate-900">
+        {/* Header */}
+        <Header />
+
+        <div className="flex flex-1 container mx-auto px-4 py-6 gap-6">
+         
+          <main className="flex-1">{children}</main>
+        </div>
+
+        {/* Footer */}
+        <Footer />
+      </body>
+    </html>
+  );
+}
+
+/*import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,4 +56,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
+}*/
