@@ -1,6 +1,6 @@
 import Sidebar from "../../components/SideBar";
 
-export default function MealsLayout({ children }) {
+export default function RecipesLayout({ children }) {
   return (
     <div className="flex min-h-screen bg-gray-50">
       {/* Sidebar fijo a la izquierda */}
