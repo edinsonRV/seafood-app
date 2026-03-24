@@ -4,7 +4,7 @@ export default async function RecipeSlugPage({ params }) {
   return (
     <div>
       <h1 className="text-2xl font-bold capitalize text-blue-600 mb-4">
-        {recipeSlug} Dishes
+        {recipeSlug} Recipes
       </h1>
       <p className="text-blue-600 mb-4">
         Showing all delicious recipes with{" "}
